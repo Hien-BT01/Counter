@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+}
+body .title {
+  font-size: 5rem;
+  color: #21d499;
+  margin-bottom: 1.5rem;
+}
+body .counter {
+  font-size: 6rem;
+  font-weight: 600;
+}
+body .options {
+  margin-top: 1.2rem;
+}
+body .options .btn-click:not(:last-of-type) {
+  margin-right: 1.5rem;
+}
+body .options .btn-click {
+  color: #179ddb;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: 24px;
+  border: 1px solid #615c5c;
+  outline: none;
+  min-width: 15rem;
+}
+@media screen and (max-width: 476px) {
+  body .options {
+    display: flex;
+    flex-direction: column;
+  }
+  body .options .btn-click {
+    margin-right: 0;
+  }
+  body .options .btn-click:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+  }
+}
